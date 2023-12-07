@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+    <style>
+*
+{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+nav img 
+{
+    width:200px;
+    margin:2rem;
+}
+form
+{
+    background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7));
+    color:white;
+    width:450px;
+    height:80vh;
+    padding:4rem;
+    margin:2rem;
+    font-family:sans-serif;
+    position: absolute;
+    left:30%;
+    top:10%;
+
+}
+form input[type="email"]
+{
+padding:13px;
+width:300px;
+border:0;
+outline:0;
+background-color:grey;
+border-radius:5px;
+}
+form input[type="password"]
+{
+    padding:13px;
+    width:300px;
+    border:0;
+    outline:0;
+    background-color:grey;
+    border-radius:5px;
+}
+form .btn
+{
+    padding:13px;
+    width:300px;
+    margin-top:2rem;
+    background-color:red;
+    color:white;
+    border-radius:5px;
+    cursor: pointer;
+    border:0;
+    outline:0;
+    font-size:20px;
+}
+.forgot
+{
+    margin-top:1rem;
+
+}
+.forgot a
+{
+    padding-left: 2rem;
+}
+form h5
+{
+    font-family:sans-serif;
+    margin-top:3rem;
+}
+#loginpage
+{
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(images/header-image.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    width:100%;
+    height:150vh;
+}
+form h1
+{
+   margin-bottom:1rem;
+}
+form p
+{
+    margin-top:1.5rem;
+}
+@media screen and (max-width:576px)
+{
+  form
+  {
+    position:relative;
+    top:0;
+    left:0;
+    width:400px;
+    height:max-content;
+  }
+  .forgot a
+{
+    position: absolute;
+    right:10px;
+    font-size:15px;
+}
+}
+    </style>
+</head>
+<body>
+    <section id="loginpage">
+        <nav>
+            <div id="close-btn" ><img src="images/logo.png"> </div>
+        </nav>
+        
+        <form action="">
+            <h1>sign in</h1>
+            <input type="email" name="email" id="email" placeholder="phone number or email">
+            <br>
+            
+            <br>
+            <input type="password" name="password" placeholder="password" id="password">
+            <br>
+            <input class="btn" value="sign in" type="submit">
+
+            <div class="forgot">
+                <input   id="remember me" type="checkbox">
+                <label for="remember me">remember me</label>
+           
+                <a  href="#">forgot password?</a>
+             </div>
+            <h5>new to netflix?<a href="#">sign up</a></h5>
+            <p>@privacy and copyright all reserved</p>
+            </form>
+
+
+    </section>
+
+    <div>
+
+    </div>
+    <footer>
+        <div class="row container mx-auto ">
+            <div class="footer-one col-lg-3 col-md-6 col-12 mt-4 mb-3">
+              <img src="C:\Users\kannan\Desktop\e-commerce\logo2.png" style="cursor: pointer;">          
+           </div>
+           <div class="footer-one col-lg-3 col-md-6 col-12 m">
+            <h2>featured</h2>
+            <ul>
+              <li><a href="#">home</a></li>
+              <li><a href="#">about</a></li>
+              <li><a href="#">shop</a></li>
+              <li><a href="#">products</a></li>
+              <li><a href="#">blog</a></li>
+              <li><a href="#">contact</a></li>
+            </ul>         
+         </div>
+         <div class="footer-one col-lg-3 col-md-6 col-12">
+          <div class="address">
+            <h3>Address</h3>
+            <p>23,Gandhi Street<br>Mumbai 28</p>
+          </div> 
+          <div class="phone">
+            <h3>Contact</h3>
+            <p>+234566887890,+913793444978<br>land</p>
+          </div>
+       </div>
+       <div class="footer-one col-lg-3 col-md-6 col-12">
+         <h3>instragram</h3>
+        <div class="insta">
+          <img src="C:\Users\kannan\Desktop\e-commerce\insta/1.jpg">
+          <img src="C:\Users\kannan\Desktop\e-commerce\insta\2.jpg">
+          <img src="C:\Users\kannan\Desktop\e-commerce\insta\3.jpg">
+          <img src="C:\Users\kannan\Desktop\e-commerce\insta\4.jpg">
+        </div>
+                
+      </div>
+          </div>
+      
+      <div class="copyright mt-5">
+      <div class="row container mx-auto px-5">
+        <div class="footer-te col-lg-4 col-md-6 col-12">
+          <div>
+            <img src="C:\Users\kannan\Desktop\e-commerce\payment.png">
+          </div>
+        </div>
+      <div class="footer-te col-lg-4 col-md-6 col-12">
+        <div class="copy">
+          <h6>rymo@ 2004 All rights reesrved.</h6>
+        </div>
+      </div>
+      <div class="footer-te col-lg-4 col-md-6 col-12">
+        <div class="social">
+         <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a> 
+         <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+         <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+        </div>
+      </div>
+      </div>
+      </div>
+    </footer>
+       
+        
+</body>
+</html>

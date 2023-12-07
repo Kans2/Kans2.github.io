@@ -1,0 +1,315 @@
+*
+{
+    margin:0px;
+    padding:0px;
+    box-sizing:border-box;
+    font-family: 'poppins',sans-serif;
+}
+body
+{
+    background-color: #000;
+   
+}
+#home
+{
+    background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(images/header-image.png);
+    width:100%;
+    height:100vh;
+    background-position:center;
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+header
+{
+    width:100%;
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+    padding-top:1rem;
+  
+}
+hr
+{
+    background-color:grey;
+    height:10px;
+    max-width:100%;
+    margin-top:2rem;
+}
+header ul
+{
+    padding-right:60px;
+    list-style:none;
+}
+header ul select
+{
+    
+    background:transparent;
+    border-radius:5px;
+    cursor: pointer;
+    border:3px solid white;
+    outline:0;
+    box-shadow:none;
+    padding:4px;
+    width:80px;
+    color:white;
+    
+}
+header ul li
+{
+    display: inline-block;
+    padding:0px 20px;
+    margin-top:4%;
+}
+.logo
+{
+    width:210px;
+    padding-left:60px;
+    cursor: pointer;
+}
+
+button
+{
+     background-color:red;
+     outline:0;
+     border:0;
+     box-shadow:none;
+     cursor:pointer;
+     text-align:center;
+     display: inline-block;
+     padding:4px;
+     width:75px;
+     color:white;
+     border-radius:5px;
+
+}
+.inputbox
+{
+    display:flex;
+    align-items:center;
+    justify-content:center
+}
+#home .content
+{
+    text-align: center;
+    overflow: hidden;
+    margin:0;
+    position:relative;
+    top:30%
+}
+.content h1
+{
+    color:white;
+    font-size:3rem;
+    font-weight:bold;
+    
+}
+.content p
+{
+    color:white;
+}
+.inputbox button
+{
+   width:200px;
+   padding:15px;
+   margin:0.5rem;
+}
+.inputbox input
+{
+    padding:15px;
+    width:500px;
+    border:0;
+    outline:0;
+    background-color: #999;
+}
+#feauture
+{
+    background-color:#000;
+    height: max-content;
+}
+#feauture .content
+{
+    
+    text-align: center;
+    position:relative;
+    top:20%;
+    overflow: hidden;
+    height: max-content;
+}
+#feauture .inputbox
+{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+#faq
+{
+    margin-top:3rem;
+    background-color:#000;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+#faq h1
+{
+    color:white;
+}
+ .accordion
+{
+    list-style: none;
+    width:100%;
+    max-width:750px;
+    
+}
+input[type="radio"]
+{
+    display: none;
+}
+.accordion label
+{
+    display:flex;
+    align-items: center;
+    padding:20px;
+    background:#999;
+    cursor:pointer;
+    font-size:0.9rem;
+    margin-bottom:2px;
+    position: relative;
+}
+#another
+{
+    background-color: #000;
+}
+#another .inputbox input
+{
+    width:300px;
+}
+#another .inputbox button
+{
+    width:100px;
+}
+.accordion li
+{
+    width:100%;
+    padding:5px;
+
+
+}
+
+.accordion .faq-content{
+    background:#999;
+    text-align: left;
+    padding:0px 20px;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.5s, padding 0.5s;
+}
+
+.accordion input[type="radio"]:checked  + label + .faq-content{
+    max-height:600px;
+    padding: 30px 20px;
+}
+.accordion input[type="radio"]:checked + label::after
+{
+    transform:rotate(132deg);
+    transition:1s;
+}
+.accordion label::after
+{
+    content:'+';
+    position:absolute;
+    top:0;
+    right:0;
+    color: #000;
+    font-size:2rem;
+    padding-right:10px;
+
+
+}
+.forgot a
+{
+    margin-left:1rem;
+}
+
+
+footer .insta img
+{
+    width:80px;
+}
+footer
+{
+    margin-top:5rem;
+    background-color: #000;
+}
+
+@media screen and (max-width:576px)
+{
+   
+   header ul
+   {
+      display:flex;
+      padding:0;
+   }
+   header .logo
+   {
+    width:200px;
+   }
+   
+   #feature #back
+   {
+    display:flex;
+    flex-direction: column-reverse;
+   }
+   .inputbox
+   {
+    flex-direction: column;
+   }
+   .inputbox button
+   {
+    width:100%;
+    margin-left:2rem;
+   }
+   #back
+   {
+    display: flex;
+    flex-direction: column-reverse;
+   }
+   #front
+   {
+    display: flex;
+    flex-direction: column-reverse;
+   }
+   #home .content h1
+
+   {
+   font-size:2rem;
+   }
+   #home .inputbox 
+   {
+     display:flex;
+     align-items: center;
+     justify-content: center;
+   }
+   .inputbox button
+   {
+    width:40%;
+
+   }
+   .inputbox input
+   {
+    width:80%;
+   }
+}
+@media screen and(max-width:798px)
+{
+    
+   #home .content h1
+{
+   font-size:1.5rem;
+}
+}
+
+
+
+
