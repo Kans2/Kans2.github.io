@@ -14,10 +14,11 @@ body
 {
     background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(images/header-image.png);
     width:100%;
-    height:100vh;
+    height:80vh;
     background-position:center;
     background-size:cover;
     background-repeat: no-repeat;
+ 
 }
 header
 {
@@ -94,7 +95,10 @@ button
     overflow: hidden;
     margin:0;
     position:relative;
-    top:30%
+    top:30%;
+    bottom:-10%;
+ 
+    
 }
 .content h1
 {
@@ -117,9 +121,13 @@ button
 {
     padding:15px;
     width:500px;
-    border:0;
+    border:1px solid white;
     outline:0;
-    background-color: #999;
+    background:transparent;
+}
+.inputbox input::placeholder
+{
+    color:#fff;
 }
 #feauture
 {
@@ -129,11 +137,15 @@ button
 #feauture .content
 {
     
-    text-align: center;
+   padding:5%;
     position:relative;
     top:20%;
     overflow: hidden;
     height: max-content!important;
+}
+#feauture .content h1
+{
+    font-weight: bold;
 }
 #feauture .inputbox
 {
@@ -164,6 +176,7 @@ button
 --bs-accordion-bg:grey;
 --bs-accordion-color:black;
 --bs-accordion-border-color:black;
+--bs-accordion-margin:3rem;
 }
 .accordion-button:not(.collapsed){
 
@@ -173,6 +186,7 @@ button
 .forgot a
 {
     margin-left:1rem;
+
 }
 
 
@@ -185,7 +199,32 @@ footer
     margin-top:5rem;
     background-color: #000;
 }
+footer a
+{
+    color:#fff;
 
+}
+footer ul 
+{
+    list-style:none;
+}
+footer ul li
+{
+  padding-bottom:1rem;
+}
+footer ul li select
+{
+    
+    background:transparent;
+    border-radius:5px;
+    cursor: pointer;
+    border:3px solid white;
+    outline:0;
+    box-shadow:none;
+    padding:4px;
+    width:80px;
+    color:white;
+}
 @media screen and (max-width:576px)
 {
 

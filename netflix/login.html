@@ -83,6 +83,8 @@ form h5
     width:100%;
     height:100vh;
     position: absolute;
+    margin:0;
+    padding: 0;
 }
 form h1
 {
@@ -92,36 +94,7 @@ form p
 {
     margin-top:1.5rem;
 }
-@media screen and (max-width:1200px)
-{
-  form
-  {
-    margin-left:0;
-    width:350px;
-  }
-  .forgot a
-{
-    position:absolute;
-    right:20px;
-    font-size:10px;
-}
-form input[type="email"]{
 
-  width:250px;
-}
-form input[type="password"]{
- 
-  width:250px;
-}
-form .btn{
-  width:250px;
-}
-
-.forgot label
-{
-  font-size: x-small;
-}
-}
 @media screen and (max-width:768px)
 {
   form
@@ -132,12 +105,15 @@ form .btn{
     left:30%;
   }
   form input[type="email"]{
-
+ background: transparent;
 width:200px;
+border:1px solid white;
 }
 form input[type="password"]{
 
 width:200px;
+background: transparent;
+border:1px solid white;
 }
 form .btn{
 width:200px;
@@ -147,21 +123,21 @@ width:200px;
 {
   form
   {
-    margin-left:0;
-    width:300px;
-    position: relative;
-    left:20%;
+  margin-left:0;
+  width:350px;
+  position: relative;
+  left:10%;
   }
   form input[type="email"]{
 
-width:200px;
+width:250px;
 }
 form input[type="password"]{
 
-width:200px;
+width:250px;
 }
 form .btn{
-width:200px;
+width:250px;
 }
 }
 @media screen and (max-width:480px)
@@ -169,12 +145,24 @@ width:200px;
   form
   {
     margin-left:0;
-    width:300px;
+    width:350px;
     position: relative;
-    left:10%;
+    left:5%;
   }
-    
 }
+@media screen and (max-width:360px){
+
+  form
+  {
+    margin-left:0;
+    width:350px;
+    position: relative;
+    left:0%;
+  }
+  
+}
+
+
 
     </style>
 </head>
@@ -210,63 +198,7 @@ width:200px;
     <div>
 
     </div>
-    <footer>
-        <div class="row container mx-auto ">
-            <div class="footer-one col-lg-3 col-md-6 col-12 mt-4 mb-3">
-              <img src="" style="cursor: pointer;">          
-           </div>
-           <div class="footer-one col-lg-3 col-md-6 col-12 m">
-            <h2>featured</h2>
-            <ul>
-              <li><a href="#">home</a></li>
-              <li><a href="#">about</a></li>
-              <li><a href="#">shop</a></li>
-              <li><a href="#">products</a></li>
-              <li><a href="#">blog</a></li>
-              <li><a href="#">contact</a></li>
-            </ul>         
-         </div>
-         <div class="footer-one col-lg-3 col-md-6 col-12">
-          <div class="address">
-            <h3>Address</h3>
-            <p>23,Gandhi Street<br>Mumbai 28</p>
-          </div> 
-          <div class="phone">
-            <h3>Contact</h3>
-            <p>+234566887890,+913793444978<br>land</p>
-          </div>
-       </div>
-       <div class="footer-one col-lg-3 col-md-6 col-12">
-         <h3>instragram</h3>
-        <div class="insta">
-         
-        </div>
-                
-      </div>
-          </div>
-      
-      <div class="copyright mt-5">
-      <div class="row container mx-auto px-5">
-        <div class="footer-te col-lg-4 col-md-6 col-12">
-          <div>
-            <img >
-          </div>
-        </div>
-      <div class="footer-te col-lg-4 col-md-6 col-12">
-        <div class="copy">
-          <h6>rymo@ 2004 All rights reesrved.</h6>
-        </div>
-      </div>
-      <div class="footer-te col-lg-4 col-md-6 col-12">
-        <div class="social">
-         <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a> 
-         <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-         <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-        </div>
-      </div>
-      </div>
-      </div>
-    </footer>
+    
        
         
 </body>
