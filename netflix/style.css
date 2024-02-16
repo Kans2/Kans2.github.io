@@ -14,7 +14,7 @@ body
 {
     background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(images/header-image.png);
     width:100%;
-    height:50vh;
+    height:80vh;
     background-position:center;
     background-size:cover;
     background-repeat: no-repeat;
@@ -170,12 +170,12 @@ button
 }
 .accordion
 {
---bs-accordion-btn-bg:grey;
---bs-accordion-active-bg:white;
---bs-accordion-active-color:black;
+--bs-accordion-btn-bg:rgb(58, 57, 57);
+--bs-accordion-active-bg:rgb(58, 57, 57);
+--bs-accordion-active-color:rgb(58, 57, 57);
 --bs-accordion-btn-focus-box-shadow:none;
---bs-accordion-bg:grey;
---bs-accordion-color:black;
+--bs-accordion-bg:rgb(58, 57, 57);
+--bs-accordion-color:white;
 --bs-accordion-border-color:black;
 --bs-accordion-border-width:2rem ;
 }
