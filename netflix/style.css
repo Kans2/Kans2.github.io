@@ -96,7 +96,7 @@ button
     margin:0;
     position:relative;
     top:30%;
-    bottom:-10%;
+   
  
     
 }
@@ -137,11 +137,11 @@ button
 #feauture .content
 {
     
-   padding:5%;
+ 
     position:relative;
     top:20%;
     overflow: hidden;
-    height: max-content!important;
+
 }
 #feauture .content h1
 {
@@ -172,17 +172,25 @@ button
 {
 --bs-accordion-btn-bg:grey;
 --bs-accordion-active-bg:white;
+--bs-accordion-active-color:black;
 --bs-accordion-btn-focus-box-shadow:none;
 --bs-accordion-bg:grey;
 --bs-accordion-color:black;
 --bs-accordion-border-color:black;
---bs-accordion-margin:3rem;
+--bs-accordion-border-width:2rem ;
 }
 .accordion-button:not(.collapsed){
 
     box-shadow:none;
 }
+.accordion-button::after {
 
+    background-image:url('images/plus.png');
+}
+.accordion-button:not(.collapsed)::after {
+
+    background-image:url('images/substract.png');
+}
 .forgot a
 {
     margin-left:1rem;
@@ -225,13 +233,22 @@ footer ul li select
     width:80px;
     color:white;
 }
+@media screen and (max-width:768px){
+  #change
+  {
+    text-align: center;
+  }
+ #home .content
+ {
+    position:relative;
+    top:20%;
+ }
+  
+
+}
 @media screen and (max-width:576px)
 {
 
-    #home
-    {
-        height:95%!important;
-    }
    
    header ul
    {
@@ -296,7 +313,10 @@ footer ul li select
     padding-left:0;
     width:100px!important;
    }
-
+button
+{
+    margin-right: 10px;
+}
 }
 @media screen and(max-width:798px)
 {
