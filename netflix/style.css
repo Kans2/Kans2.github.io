@@ -170,11 +170,12 @@ button
 }
 .accordion
 {
---bs-accordion-btn-bg:rgb(58, 57, 57);
---bs-accordion-active-bg:rgb(58, 57, 57);
---bs-accordion-active-color:rgb(58, 57, 57);
+--bs-accordion-btn-bg:rgba(53, 44, 44, 0.212);
+--bs-accordion-btn-color:white;
+--bs-accordion-active-bg:rgba(44, 39, 39, 0.212);
+--bs-accordion-active-color:white;
 --bs-accordion-btn-focus-box-shadow:none;
---bs-accordion-bg:rgb(58, 57, 57);
+--bs-accordion-bg:rgba(44, 39, 39, 0.212);
 --bs-accordion-color:white;
 --bs-accordion-border-color:black;
 --bs-accordion-border-width:2rem ;
@@ -185,11 +186,13 @@ button
 }
 .accordion-button::after {
 
-    background-image:url('images/plus.png');
+    background-image:url('images/icons8-add-24.png');
+   
 }
 .accordion-button:not(.collapsed)::after {
 
-    background-image:url('images/substract.png');
+    background-image:url('images/icons8-close-30.png');
+   
 }
 .forgot a
 {
