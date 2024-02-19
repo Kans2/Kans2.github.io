@@ -3,7 +3,7 @@
     margin:0px;
     padding:0px;
     box-sizing:border-box;
-    font-family: 'poppins',sans-serif;
+    font-family: Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
 }
 body
 {
@@ -12,9 +12,9 @@ body
 }
 #home
 {
-    background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(images/header-image.png);
+    background-image: linear-gradient(to top,rgba(0, 0, 0, 0.8)0,rgba(0,0,0,0.4), rgba(0, 0, 0, 0.8) 100%),url(images/header-image.png);
     width:100%;
-    height:80vh;
+    height:100vh;
     background-position:center;
     background-size:cover;
     background-repeat: no-repeat;
@@ -47,13 +47,18 @@ header ul select
     background:transparent;
     border-radius:5px;
     cursor: pointer;
-    border:3px solid white;
+    border:1px solid rgb(151, 147, 147);
     outline:0;
     box-shadow:none;
     padding:4px;
-    width:80px;
+    width:150px;
     color:white;
     
+    
+}
+header ul li select option
+{
+    padding-left:10%;
 }
 header ul li
 {
@@ -104,7 +109,7 @@ button
 {
     color:white;
     font-size:3rem;
-    font-weight:bold;
+    font-weight:800;
     
 }
 .content p
@@ -117,17 +122,20 @@ button
    padding:15px;
    margin:0.5rem;
 }
+
 .inputbox input
 {
     padding:15px;
-    width:500px;
-    border:1px solid white;
+    width:370px;
+    border-color: rgba(128,128,128,0.7);
     outline:0;
-    background:transparent;
+    background: rgba(22,22,22,0.7);
+    border-radius:3px;
+
 }
 .inputbox input::placeholder
 {
-    color:#fff;
+    color: rgba(255,255,255,0.7);
 }
 #feauture
 {
@@ -170,15 +178,17 @@ button
 }
 .accordion
 {
---bs-accordion-btn-bg:rgba(53, 44, 44, 0.212);
---bs-accordion-btn-color:white;
---bs-accordion-active-bg:rgba(44, 39, 39, 0.212);
+--bs-accordion-btn-bg:rgb(45,45,45);
+--bs-accordion-btn-color:rgb(255,255,255);
+--bs-accordion-active-bg:rgb(45,45,45);
 --bs-accordion-active-color:white;
 --bs-accordion-btn-focus-box-shadow:none;
---bs-accordion-bg:rgba(44, 39, 39, 0.212);
+--bs-accordion-bg:rgb(45,45,45);
 --bs-accordion-color:white;
 --bs-accordion-border-color:black;
---bs-accordion-border-width:2rem ;
+--bs-accordion-border-width:1rem ;
+--bs-accordion-btn-padding-y:3%;
+--bs-accordion-body-padding-y:5%;
 }
 .accordion-button:not(.collapsed){
 
@@ -187,11 +197,13 @@ button
 .accordion-button::after {
 
     background-image:url('images/icons8-add-24.png');
+    transition:0.5s ease-in-out;
    
 }
 .accordion-button:not(.collapsed)::after {
 
     background-image:url('images/icons8-close-30.png');
+    transition:0.5s ease-in-out;
    
 }
 .forgot a
@@ -212,7 +224,9 @@ footer
 }
 footer a
 {
-    color:#fff;
+    color: rgba(255,255,255,0.7);
+    font-size:0.8rem;
+    
 
 }
 footer ul 
@@ -263,11 +277,7 @@ footer ul li select
     width:200px;
    }
   
-   #feature #back
-   {
-    display:flex;
-    flex-direction: column-reverse;
-   }
+  
    .inputbox
    {
     flex-direction: column;
@@ -277,16 +287,7 @@ footer ul li select
     width:100%;
     margin-left:2rem;
    }
-   #back
-   {
-    display: flex;
-    flex-direction: column-reverse;
-   }
-   #front
-   {
-    display: flex;
-    flex-direction: column-reverse;
-   }
+ 
    #home .content h1
 
    {
