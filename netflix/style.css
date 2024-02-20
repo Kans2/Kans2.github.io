@@ -164,6 +164,7 @@ button
 #feauture .content
 {
 
+
 width:100%;
 padding-top:20%;
 
@@ -171,13 +172,11 @@ padding-top:20%;
 }
 #feauture .content h1
 {
+    padding-right:80px;
     font-weight:1000;
     font-size:3rem;
 }
-#feautre .content h4
-{
-    color: white;
-}
+
 .show h1
 
 {
@@ -244,7 +243,21 @@ padding-top:20%;
     background-image:url('images/icons8-close-30.png');
     transition:0.5s ease-in-out;
    
+} 
+.accordion-body 
+{
+      border:3px solid black;
 }
+.accordion-button {
+    transition: background-color 0.3s ease-in-out;
+}
+.accordion-button:hover
+{
+    background-color:rgb(90, 88, 88);
+}
+  
+  
+  
 .forgot a
 {
     margin-left:1rem;
@@ -294,22 +307,18 @@ footer ul li select
    #home .content
    {
     position: relative;
-    top:5%;
+    top:10%;
+   }
+   #home .content h1
+   {
+    font-size:1.7rem;
    }
     #home
     {
         height:80vh!important;
     }
-    #home .content h1
-    {
-        font-size:2rem;
-    }
-    #feautre .content
-    {
-        font-size:1rem;
-        width:100%;
-
-    }
+   
+  
     .inputbox 
     {
         display: flex;
@@ -333,16 +342,45 @@ footer ul li select
     }
     header ul li .language-select select
     {
-        margin-top:10px;
-        width:75px;
-        height:30px;
+       width:100px;
+       height:33px;
+       margin:0;
+       padding-left:30px;
+       display: flex;
+       align-items: center;
+       justify-content: center;
     }
-   #change h1
-    {
-        font-size:1rem;
-        width:100%;
-        font-weight: 200;
-    }
+
+  
+#feuture .content p
+{
+    width:100%;
+}
+#feature .content h1
+{
+    padding-left:0%;
+    padding-right:0%;
+    width:170%;
+    text-align: center;
+}
+#feauture .content
+{
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-left:5%;
+    padding-top:0;
+    padding-right:5%;
+    margin:0;
+    
+}
+#back
+{
+    display: flex;
+    flex-direction: column;
+}
 }
 footer .language-select select
 {
@@ -356,5 +394,45 @@ footer .language-select select
     {
         height:100vh;
     }
+    #feauture .content
+    {
+        width:100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding-left:10%;
+        padding-top:0;
+        padding-right:10%;
+        margin:0;
+        
+        
+
+        
+    }
+    #feauture .container
+    {
+        padding:0;
+    }
+    #feauture .content p
+    {
+        font-size:1.2rem;
+        width:150%;
+        text-align: center;
+        padding:0px;
+        overflow: hidden;
+    }
+    #feauture .content h1
+    {
+        padding:0px;
+        width:100%;
+        text-align: center;
+        font-size:1.9rem;
+    }
+    #feauture img
+    {
+        width:100%!important;
+    }
 }
+
 
